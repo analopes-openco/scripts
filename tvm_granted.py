@@ -1,3 +1,4 @@
+# from pyramid.threadlocal import get_current_registry
 import transaction
 from typing import Dict, List
 from app.openco import IOpenCoClient
