@@ -4002,8 +4002,10 @@ data = [
 
 
 with open(
-        file='/home/oal100484/Documents/analitic_settlement_payment.csv',
-        mode='w', newline='') as file:
+    file="/home/oal100484/Documents/analitic_settlement_payment.csv",
+    mode="w",
+    newline="",
+) as file:
     columns = data[0].keys()
     dict_writer = csv.DictWriter(file, columns)
     dict_writer.writeheader()

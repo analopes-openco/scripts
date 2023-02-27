@@ -2352,7 +2352,7 @@ for item in inbox:
         "external_identifier": None,
         "notified_fund_at": None,
         "notified_target_date": None,
-        "loan_strategy": None
+        "loan_strategy": None,
     }
 
     if payment:
@@ -2367,9 +2367,7 @@ for item in inbox:
             else None
         )
         notified_target_date = (
-            True
-            if notified_fund_at and notified_fund_at <= "2023-01-02"
-            else False
+            True if notified_fund_at and notified_fund_at <= "2023-01-02" else False
         )
         loan_strategy = True if sett.loan.strategy else False
 

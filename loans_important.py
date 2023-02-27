@@ -30,7 +30,7 @@
 #     to_tvm_payment_plan_change, to_tvm_settlement, to_tvm_payment)
 
 
-# PAYMENT
+# LOAN - Consultar payment
 # payment = SettlementPayment.get(uuid)
 # payment.settlements.all()
 # sett = payment.settlements.first()
@@ -41,6 +41,6 @@
 # sett.partials.first().instalment
 # sett.partials.first().instalment.balance()
 
-# LOAN
-# loan = Loan.query.join(Note).join(CCB).filter(CCB.number == "B13033181").all()
+# LOAN - Consultar note
+# loan = Loan.query.join(Note).join(CCB).filter(CCB.number == "L13172226").all()
 # loan = Loan.query.join(Note, CCB).filter(CCB.number == '<ccb_number>').one()
